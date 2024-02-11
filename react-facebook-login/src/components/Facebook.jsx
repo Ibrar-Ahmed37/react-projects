@@ -3,6 +3,7 @@ import FacebookLogin from "react-facebook-login";
 export const Facebook = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [user, setUser] = useState(null);
+  const appId = import.meta.env.VITE_FACEBOOK_ID;
   let fbContent = null;
 
   const responseFacebook = (response) => {
@@ -25,7 +26,7 @@ export const Facebook = () => {
   } else {
     fbContent = (
       <FacebookLogin
-        appId="742676020900275"
+        appId= {appId} 
         autoLoad={true}
         fields="name,email,picture"
         onClick={componentClicked}
