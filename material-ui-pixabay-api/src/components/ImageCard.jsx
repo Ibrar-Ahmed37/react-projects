@@ -17,7 +17,7 @@ export const ImageCard = ({ imageData }) => {
   const [showModal, setShowModal] = useState(false);
 
   const handleModal = () => {
-    setShowModal(!showModal);
+    setShowModal(!showModal); 
   };
 
   return (
