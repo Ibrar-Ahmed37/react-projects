@@ -1,3 +1,6 @@
+npm i auth0/auth0-react
+
+
 In this react practice Project, I worked on the authorization part. I made a route that is only accessible to the users who have access to it, otherwise they will be asked to login first to access the route.
 I have taken the functionalities of login and logout from the auth0.
 
@@ -21,3 +24,4 @@ Then You can use the useAuth0() function this will give you the user,isLoading a
 We can tweak with these values wherever we want to check 
     { isAuthenticated && <div> user information : {user.name} <Logout/></div>)
     { !isAuthenticated && <div> First you have to login<Login/></div>)
+
